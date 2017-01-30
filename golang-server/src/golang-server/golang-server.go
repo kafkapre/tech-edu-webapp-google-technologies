@@ -28,9 +28,9 @@ func main() {
 	var router = gin.Default()
 	log.Println("Golang server is RUNNING.")
 
-	router.GET("/info", func(c *gin.Context) { httpGetInfo(c) })
+	router.GET("/api/ping", func(c *gin.Context) { httpGetInfo(c) })
 
-	router.GET("/img/:id", func(c *gin.Context) { httpGetImage(c) })
+	router.GET("/api/img/:id", func(c *gin.Context) { httpGetImage(c) })
 
 	router.Run(":4000")
 }
