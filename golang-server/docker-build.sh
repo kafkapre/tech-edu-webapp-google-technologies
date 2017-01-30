@@ -15,7 +15,7 @@ else
     infoServerDockerTag="$1"
 fi
 
-IMAGE_NAME="us.gcr.io/sonic-trail-154010/golang-server:$infoServerDockerTag" 
+IMAGE_NAME="us.gcr.io/sonic-trail-154010/edu-golang-server:$infoServerDockerTag" 
 
 docker build -t $IMAGE_NAME  $currentDir
 

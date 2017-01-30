@@ -15,7 +15,7 @@ $actualDir/docker-build.sh $dockerTag
 
 if [ "$?" == "0" ]
 then
-  docker run -p 4000:4000 "us.gcr.io/sonic-trail-154010/golang-server:$dockerTag"
+  docker run -p 4000:4000 "us.gcr.io/sonic-trail-154010/edu-golang-server:$dockerTag"
   exit 0
 else
   echo -e "\nGolang-server build failed. \n"
