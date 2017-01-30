@@ -8,15 +8,11 @@ k8sApiServer="localhost"
 
 
 
-if [ $APROVAL_REQUESTED == true ];
-
-    echo "Is version [$dockerImageVersion] ok? (y/n)"
-    read  isVersionOk
-    if [ "$isVersionOk" != "y" ]; then
-        exit 0
-    fi
+echo "Is version [$dockerImageVersion] ok? (y/n)"
+read  isVersionOk
+if [ "$isVersionOk" != "y" ]; then
+    exit 0
 fi
-
 
 echo "Creating namespace ..."
 sed -e "s/%namespaceName%/$namespace/" $currentDir/namespace.yaml | kubectl create -f -

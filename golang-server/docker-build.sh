@@ -2,10 +2,12 @@
 
 currentDir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
+
 export GOPATH="$currentDir"
 
 rm -r "$currentDir/bin"
 
+go get "github.com/gin-gonic/gin" 
 go install golang-server
 
 if [ -z "$1" ];

@@ -22,9 +22,9 @@ read  isOk
 if [ "$isOk" == "y" ];
 then
     action="build"
-    $currentDir/../server/golang-server/docker-build.sh "$dockerImageVersion"
+    $currentDir/../golang-server/docker-build.sh "$dockerImageVersion"
     check $? "$action" "golang-server"
-    $currentDir/../server/lb/docker-build.sh "$dockerImageVersion"
+    $currentDir/../lb/docker-build.sh "$dockerImageVersion"
     check $? "$action" "lb"
     $currentDir/../client/docker-build.sh "$dockerImageVersion"
 	check $? "$action" "ui-server"
