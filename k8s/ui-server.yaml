@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: ui-server
+spec:
+  replicas: 1
+  selector:
+    app: app-server
+    component: ui-server
+  template:
+    metadata:
+      name: ui-server
+      labels:
+        app: app-server
+        component: ui-server
+    spec:
+      containers:
+        - name: ui-server
+          image: "us.gcr.io/sonic-trail-154010/edu-ui-server:%dockerImageVersion%"
+          ports:
+            - name: server-port
+              containerPort: 3000
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: ui-server-svc
+  labels:
+    app: app-server
+    component: ui-server
+spec:
+  type: ClusterIP
+  selector:
+    app: app-server
+    component: ui-server
+  ports:
+    - port: 3000
+      protocol: TCP
+      name: server-port
+      
