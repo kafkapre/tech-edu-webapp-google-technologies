@@ -19,4 +19,4 @@ Implement, Build and Release your Web App with Google Technologies
 
 
 ## App Schema
-![Schema](schema.pdf)
+![Schema](https://github.com/kafkapre/tech-edu-webapp-google-technologies/blob/master/schema.pdf)
