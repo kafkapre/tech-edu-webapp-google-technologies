@@ -18,7 +18,7 @@ sed -e "s/%namespaceName%/$namespace/" $currentDir/namespace.yaml | kubectl crea
 echo "Starting ui-server instance"
 sed -e "s/%dockerImageVersion%/$dockerImageVersion/"  $currentDir/ui-server.yaml | kubectl --namespace=$namespace create -f -
 
-echo "Starting info-server instance"
+echo "Starting Golang-server instance"
 sed -e "s/%dockerImageVersion%/$dockerImageVersion/"  $currentDir/golang-server.yaml | kubectl --namespace=$namespace create -f -
 
 echo "Starting loadbalancer instance"
