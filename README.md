@@ -1,6 +1,8 @@
 Implement, Build and Release your Web App with Google Technologies Fast as Possible
 ===================
  
+## Web App Images Gallery
+Angular 2 web app fetch images provided by Golang server and presents them. This app will  be running in cluster with Kubernetes.
  
 ## Necessary Installed Prerequisites (for this demo)
 >- Linux (Ubuntu 16.04 in my  case)
@@ -25,10 +27,6 @@ Implement, Build and Release your Web App with Google Technologies Fast as Possi
 >- Html
 >- Nginx
 >- Bash
-
-## Web App Images Gallery
-Angular 2 web app fetch images provided by Golang server and presents them. 
-
 
 ## App Schema
 ![Schema](https://github.com/kafkapre/tech-edu-webapp-google-technologies/blob/master/schema.png?raw=true)
