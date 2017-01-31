@@ -23,6 +23,8 @@ Angular 2 web app fetch images provided by Golang server and presents them. This
 >- Kubernetes
 >- Docker
 >- Golang
+>- GKE
+>- Angular 2
 >- Typescript
 >- Html
 >- Nginx
