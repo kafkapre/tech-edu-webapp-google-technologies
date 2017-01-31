@@ -8,6 +8,11 @@ minikube start
 eval $(minikube docker-env)
 ```
 
+   * Check that no pods are deployed yet
+```
+kubectl --all-namespaces=true get pods
+```
+
    * Build all Docker images
 ```  
 ./build-all-docker-images.sh
