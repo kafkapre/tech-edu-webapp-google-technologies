@@ -13,7 +13,6 @@ function check {
 	fi
 }
 
-
 source $currentDir/cluster.conf
 
 echo "Is version [$dockerImageVersion] ok? (y/n)"
@@ -27,7 +26,7 @@ then
     $currentDir/../lb/docker-build.sh "$dockerImageVersion"
     check $? "$action" "lb"
     $currentDir/../client/docker-build.sh "$dockerImageVersion"
-	check $? "$action" "ui-server"
+    check $? "$action" "ui-server"
 
     if [ "$1" == "-p" ];
     then

@@ -6,8 +6,6 @@ source $currentDir/cluster.conf
 
 k8sApiServer="localhost"
 
-
-
 echo "Is version [$dockerImageVersion] ok? (y/n)"
 read  isVersionOk
 if [ "$isVersionOk" != "y" ]; then
