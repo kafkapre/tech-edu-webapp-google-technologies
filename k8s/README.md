@@ -35,7 +35,7 @@ minikube ip
 
    * Ping SimpleCrudServer
 ```
-curl $(minikube ip):4000/ping
+curl $(minikube ip)/api/ping
 ```
 
    * Undeploy SimpleCrudServer from local k8s
