@@ -1,4 +1,4 @@
-# Run SimpleCrudServer in local Kubernetes 
+# Run Web App in local Kubernetes 
 
    * Install Minikube (https://github.com/kubernetes/minikube)
  
