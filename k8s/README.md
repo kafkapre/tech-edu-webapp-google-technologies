@@ -8,6 +8,11 @@ minikube start
 eval $(minikube docker-env)
 ```
 
+   * Build all Docker images
+```  
+./build-all-docker-images.sh
+```
+
    * Deploy SimpleCrudServer into local k8s
 ```
 ./deploy
