@@ -2,7 +2,7 @@ Implement, Build and Release your Web App with Google Technologies
 ===================
  
  
-## Necessary Prerequisites 
+## Necessary Installed Prerequisites 
 >- Linux (Ubuntu 16.04 in my  case)
 >- Git
 >- Curl
@@ -12,7 +12,7 @@ Implement, Build and Release your Web App with Google Technologies
 >- Google Cloud SDK (contains Kubectl)
 
 
-## Not-Necessary Prerequisites 
+## Not-Necessary Installed Prerequisites (can be handled in Dockerfiles)
 >- Golang
 >- NodeJS
 >- Angular CLI
