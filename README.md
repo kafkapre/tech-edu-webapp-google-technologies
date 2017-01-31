@@ -10,13 +10,21 @@ Implement, Build and Release your Web App with Google Technologies
 >- VirtualBox
 >- Minikube
 >- Google Cloud SDK (contains Kubectl)
-
+>- Google account
 
 ## Not-Necessary Installed Prerequisites (can be handled in Dockerfiles)
 >- Golang
 >- NodeJS
 >- Angular CLI
 
+## Technologies You Should Be Familiar With
+>- Kubernetes
+>- Docker
+>- Golang
+>- Typescript
+>- Html
+>- Nginx
+>- Bash
 
 ## App Schema
 ![Schema](https://github.com/kafkapre/tech-edu-webapp-google-technologies/blob/master/schema.png?raw=true)
