@@ -28,14 +28,14 @@ kubectl --all-namespaces=true get pods
 kubectl --all-namespaces=true get pods
 ```
 
-   * Obtain ip of local k8s
-```
-minikube ip
-```
-
    * Ping SimpleCrudServer
 ```
 curl $(minikube ip)/api/ping
+```
+
+   * Obtain ip of local virtual machine with k8s and put it into browser
+```
+minikube ip
 ```
 
    * Undeploy SimpleCrudServer from local k8s
