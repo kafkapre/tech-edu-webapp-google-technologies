@@ -2,7 +2,7 @@ Implement, Build and Release your Web App with Google Technologies
 ===================
  
  
-## Necessary Installed Prerequisites 
+## Necessary Installed Prerequisites (for this demo)
 >- Linux (Ubuntu 16.04 in my  case)
 >- Git
 >- Curl
