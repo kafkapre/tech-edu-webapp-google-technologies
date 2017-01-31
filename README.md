@@ -27,7 +27,7 @@ Implement, Build and Release your Web App with Google Technologies
 >- Bash
 
 ## Web App Images Gallery
-
+Angular 2 web app fetch images provided by Golang server and presents them. 
 
 
 ## App Schema
