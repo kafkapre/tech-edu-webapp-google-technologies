@@ -19,3 +19,4 @@ Implement, Build and Release your Web App with Google Technologies
 
 
 ## App Schema
+![Schema](schema.pdf)
