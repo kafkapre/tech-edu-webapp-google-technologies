@@ -18,7 +18,7 @@ kubectl --all-namespaces=true get pods
 ./build-all-docker-images.sh
 ```
 
-   * Deploy SimpleCrudServer into local k8s
+   * Deploy app into local k8s
 ```
 ./deploy
 ```
@@ -28,7 +28,7 @@ kubectl --all-namespaces=true get pods
 kubectl --all-namespaces=true get pods
 ```
 
-   * Ping SimpleCrudServer
+   * Ping app
 ```
 curl $(minikube ip)/api/ping
 ```
@@ -38,7 +38,9 @@ curl $(minikube ip)/api/ping
 minikube ip
 ```
 
-   * Undeploy SimpleCrudServer from local k8s
+# Undeploy App from Minikube
+
+   * Undeploy app from local k8s
 ```
 ./undeploy
 ```
@@ -54,3 +56,22 @@ minikube stop
 minikube delete
 ```
 
+# Deploy App to Google Container Engine
+
+  * Install Goolge Cloud SDK [link](https://cloud.google.com/sdk/docs/quickstart-linux)
+  
+  * Build all Docker images and push them to Google Container Engine Repository
+```  
+./build-all-docker-images.sh -p
+```
+   * Deploy app into local k8s
+```
+./deploy
+```
+
+   * Check that pods were deployed
+```
+kubectl --all-namespaces=true get pods
+```
+
+  * Congratulation you just deploy your app in GKE, now obtain ip of machine where your app is running. You should go to Google Cloud Platfor and in Networking -> External Ip Addresses find desired ip.
